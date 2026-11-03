@@ -9,7 +9,7 @@
 
 /* NU-001 @import url(chrome/tab_close_button_always_on_hover.css); */
 /* NU-001 @import url(chrome/tab_loading_progress_throbber.css); */
-@import url(chrome/button_effect_scale_onclick.css);
+/* @import url(chrome/button_effect_scale_onclick.css); */
 /* NU-002 @import url(chrome/blank_page_background.css); */
 /* NU-001 @import url(chrome/autohide_menubar.css); */
 /* NU-000 @import url(chrome/hide_toolbox_top_bottom_borders.css); */
@@ -20,8 +20,8 @@
 /* NU-000 @import url(chrome/dark_additional_windows.css); */
 /* NU-000 @import url(chrome/dark_checkboxes_and_radios.css); */
 @import url(chrome/minimal_text_fields.css);
-@import url(chrome/minimal_toolbarbuttons.css);
-@import url(chrome/urlbar_centered_text.css);
+/* @import url(chrome/minimal_toolbarbuttons.css); */
+/* @import url(chrome/urlbar_centered_text.css); */
 @import url(chrome/hide_tabs_toolbar_v2.css);
 
 /* Apply your custom modifications after imports */
