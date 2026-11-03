@@ -1,0 +1,49 @@
+/* Example userChrome.css file */
+
+/* ==> NU(Nao usarei) porque: */
+/* NU-000 nao quero */
+/* NU-001 nao uso o recurso */
+/* NU-002 newtab já é escopo de outro mod (Vimium C) */
+
+/* Import your desired components first */
+
+/* NU-001 @import url(chrome/tab_close_button_always_on_hover.css); */
+/* NU-001 @import url(chrome/tab_loading_progress_throbber.css); */
+@import url(chrome/button_effect_scale_onclick.css);
+/* NU-002 @import url(chrome/blank_page_background.css); */
+/* NU-001 @import url(chrome/autohide_menubar.css); */
+/* NU-000 @import url(chrome/hide_toolbox_top_bottom_borders.css); */
+@import url(chrome/vertical_context_navigation.css);
+@import url(chrome/minimal_popup_scrollbars.css);
+/* NU-000 @import url(chrome/button_effect_icon_glow.css); */
+/* NU-000 @import url(chrome/dark_context_menus.css); */
+/* NU-000 @import url(chrome/dark_additional_windows.css); */
+/* NU-000 @import url(chrome/dark_checkboxes_and_radios.css); */
+@import url(chrome/minimal_text_fields.css);
+@import url(chrome/minimal_toolbarbuttons.css);
+@import url(chrome/urlbar_centered_text.css);
+@import url(chrome/hide_tabs_toolbar_v2.css);
+
+/* Apply your custom modifications after imports */
+
+/* :root{ */
+/*   --toolbar-bgcolor: rgb(36,44,59) !important; */
+/*   --uc-menu-bkgnd: var(--toolbar-bgcolor); */
+/*   --arrowpanel-background: var(--toolbar-bgcolor) !important; */
+/*   --autocomplete-popup-background: var(--toolbar-bgcolor) !important; */
+/*   --uc-menu-disabled: rgb(90,90,90) !important; */
+/*   --lwt-toolbar-field-focus: rgb(36,44,59) !important; */
+/* } */
+
+#sidebar-box{ --sidebar-background-color: var(--toolbar-bgcolor) !important; }
+window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; }
+
+/* reference: https://github.com/A-Kees-H/Firefox-Vertical-Tabs-Mod */
+/* Remove sidebar tools + extensions column */
+#sidebar-tools-and-extensions-splitter, .sidebar-panel #sidebar-tools-and-extensions-splitter { display: none !important; }
+.wrapper > .buttons-wrapper { display: none !important; }
+/* Prevent leftover spacing */
+.sidebar-panel .wrapper { padding-right: 0 !important; margin-right: 0 !important; }
+/* Hide Sidebar toggle button */
+#sidebar-button { display: none !important; }
+
